@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap');
+
+:root {
+    --fonte-principal: 'Sora', sans-serif;
+    --azul: #00167a;
+    --vermelho: #d10413;
+    --preto: #333333;
+    --light: #ced4da;
+    --light-blue: #80bdff;
+    --branco: #ffffff;
+    --cinzinha: #ced4da;
+    --shadow: #007bff40;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-principal);
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0px;
+}
+
+.header__container {
+    width: 1350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 40px;
+}
+
+.header__logo-img {
+    width: 120px;
+}
+
+.header__contato-texto {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--azul);
+}
+
+.header__contato-texto a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0px;
+}
+
+.container__hero {
+    width: 1350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 40px;
+}
+
+/* HERO TEXTO */
+
+.container__hero-texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+}
+
+/* HERO IMG */
+
+.container__hero-img {
+    width: 50%;
+}
+
+.container__hero-img img {
+    width: 100%;
+}
+
+.subtitulo {
+    font-size: 18px;
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
+.headline {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--preto);
+}
+
+.paragrafo {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--preto);
+}
+
+/* FORMULARIO */
+
+.formulario {
+    width: 100%;
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.label {
+    color: var(--azul);
+}
+
+.container__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.container__2colunas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.form__input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid var(--light);
+    border-radius: .25rem;
+    outline: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form__input:focus {
+    border-color: var(--light-blue);
+    box-shadow: 0 0 0 0.2rem var(--shadow);
+}
+
+.form__select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid var(--light);
+    border-radius: .25rem;
+    outline: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    appearance: none;
+    /* Remove a aparência padrão do navegador */
+    background-image: url('path_to_arrow_icon');
+    /* Caminho para um ícone de seta para baixo */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+.form__select:focus {
+    border-color: var(--light-blue);
+    box-shadow: 0 0 0 0.2rem var(--shadow);
+}
+
+.form__option {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.botao__enviar {
+    background-color: var(--vermelho);
+    padding: 16px 24px;
+    width: 180px;
+    text-align: center;
+    color: var(--branco);
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 16px;
+}
+
+
+/* NOTEBOOK */
+@media (max-width: 1220px) {
+    .headline {
+        font-size: 40px;
+    }
+
+    .paragrafo {
+        font-size: 18px;
+    }
+
+    .formulario label {
+        font-size: 13px;
+    }
+
+    .container__form {
+        gap: 8px;
+    }
+
+    .container__2colunas {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .campo50 {
+        width: 50%;
+    }
+
+    .botao__enviar {
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+    .container__hero {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        gap: 32px;
+    }
+
+    .container__hero-texto {
+        width: 100%;
+    }
+
+    .container__hero-img {
+        width: 75%;
+    }
+}
