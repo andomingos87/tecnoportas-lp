@@ -161,9 +161,6 @@ body {
     outline: none;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     appearance: none;
-    /* Remove a aparência padrão do navegador */
-    background-image: url('path_to_arrow_icon');
-    /* Caminho para um ícone de seta para baixo */
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 12px;
