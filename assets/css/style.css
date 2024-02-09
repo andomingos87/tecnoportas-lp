@@ -181,13 +181,16 @@ body {
 
 .botao__enviar {
     background-color: var(--vermelho);
-    padding: 16px 24px;
-    width: 180px;
+    padding: 16px 32px;
+    width: 250px;
     text-align: center;
     color: var(--branco);
     font-size: 16px;
     border-radius: 5px;
     margin-top: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 
