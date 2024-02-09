@@ -12,6 +12,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
         produtoInteresse: document.getElementById('produtointeresse').value // Garanta que o ID está correto
     };
 
+    // Url da API em produção
     fetch('https://tecnoportasleads.com.br/api/1.1/wf/novo-lead', {
         method: 'POST',
         headers: {
