@@ -2,14 +2,14 @@ document.getElementById('meuFormulario').addEventListener('submit', function(e) 
     e.preventDefault();
 
     var data = {
-        nomecompleto: document.getElementById('nomecompleto').value,
+        nomeCompleto: document.getElementById('nomecompleto').value, // Garanta que o ID está correto
         email: document.getElementById('email').value,
         whatsapp: document.getElementById('whatsapp').value,
-        tipolead: document.getElementById('tipolead').value,
+        tipoLead: document.getElementById('tipolead').value, // Garanta que o ID está correto
         estado: document.getElementById('estado').value,
-        cidade: document.getElementById('cidade').value,
-        segmento: document.getElementById('segmento').value,
-        produtointeresse: document.getElementById('produtointeresse').value
+        cidade: document.getElementById('cidade').value, // Agora coleta o valor de um input de texto
+        segmento: document.getElementById('segmento').value, // Garanta que o ID está correto
+        produtoInteresse: document.getElementById('produtointeresse').value // Garanta que o ID está correto
     };
 
     fetch('https://tecnoportasleads.com.br/version-test/api/1.1/wf/novo-lead', {
