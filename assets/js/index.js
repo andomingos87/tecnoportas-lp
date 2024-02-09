@@ -1,4 +1,4 @@
-document.getElementById('meuFormulario').addEventListener('submit', function(e) {
+document.getElementById('meuFormulario').addEventListener('submit', function (e) {
     e.preventDefault();
 
     var data = {
@@ -16,16 +16,23 @@ document.getElementById('meuFormulario').addEventListener('submit', function(e) 
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
+            // Se necessário, adicione o cabeçalho de autorização aqui
         },
         body: JSON.stringify(data)
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        // Tratar a resposta de sucesso aqui
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        // Tratar o erro aqui
-    });
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok: ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Success:', data);
+            // Tratar a resposta de sucesso aqui
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            // Tratar o erro aqui
+        });
+
 });
