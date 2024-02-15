@@ -5,7 +5,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
         nomecompleto: document.getElementById('nomecompleto').value, // Garanta que o ID está correto
         email: document.getElementById('email').value,
         whatsapp: document.getElementById('whatsapp').value,
-        cidade: document.getElementById('cidade').value, // Agora coleta o valor de um input de texto
+        cidade: document.getElementById('cidade').value,
         tipolead: document.getElementById('tipolead').value, // Garanta que o ID está correto
         estado: document.getElementById('estado').value,
         segmento: document.getElementById('segmento').value, // Garanta que o ID está correto
@@ -13,7 +13,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
     };
 
     // Url da API em produção
-    fetch('https://tecnoportasleads.com.br/api/1.1/wf/novo-lead', {
+    fetch('https://tecnoportasleads.com.br/version-test/api/1.1/wf/novo-lead', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -21,6 +21,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
         },
         body: JSON.stringify(data)
     })
+
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok: ' + response.statusText);
@@ -36,6 +37,5 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
             // Tratar o erro aqui
         });
 
-        // Comentário teste de repositorio
-
+        this.reset()
 });

@@ -10,8 +10,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/imagens/favicon.png">
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/imagens/favicon.png">
     <link rel="mask-icon" type="image/png" sizes="180x180" href="assets/imagens/favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="assets/js/index.js" defer></script>
-    <!-- <script src="assets/js/apiEndereco.js" defer></script> -->
+    <script src="assets/js/apiEndereco.js" defer></script>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -77,13 +79,15 @@
                                 <div class="container__campo">
                                     <label for="tipolead" class="label">Eu sou</label>
                                     <select name="tipolead" id="tipolead" required class="form__select">
+                                        <option value="" disabled selected class="form__option">PF ou PJ?</option>
                                         <option class="form__option" value="PF">Pessoa Física</option>
                                         <option class="form__option" value="PJ">Pessoa Jurídica</option>
                                     </select>
                                 </div>
                                 <div class="container__campo">
-                                    <label for="estado" class="label">UF</label>
+                                    <label for="estado" class="label">Estado</label>
                                     <select name="estado" id="estado" class="form__select">
+                                        <option value="" disabled selected class="form__option">Selecione</option>
                                         <option class="form__option" value="AL">AL</option>
                                         <option class="form__option" value="AC">AC</option>
                                         <option class="form__option" value="AP">AP</option>
@@ -111,19 +115,23 @@
                                         <option class="form__option" value="SP">SP</option>
                                         <option class="form__option" value="SE">SE</option>
                                         <option class="form__option" value="TO">TO</option>
-
                                     </select>
                                 </div>
                             </div>
                             <div class="container__campo">
                                 <label for="cidade" class="label">Cidade</label>
-                                <input class="form__input" type="text" id="cidade" name="cidade" placeholder="Digite o nome da sua cidade" required>
+                                <select name="cidade" id="cidade" class="form__select">
+                                    <option value="" disabled selected class="form__select">Selecione uma cidade...
+                                    </option>
+                                </select>
+                                <!-- <input class="form__input" type="text" id="cidade" name="cidade" placeholder="Digite o nome da sua cidade" required> -->
                             </div>
                         </div>
                         <div class="container__2colunas">
                             <div class="container__campo">
                                 <label for="segmento" class="label">Segmento</label>
                                 <select name="segmento" id="segmento" required class="form__select">
+                                    <option value="" disabled selected class="form__option">Selecione uma opção</option>
                                     <option class="form__option" value="Industrial">Industrial</option>
                                     <option class="form__option" value="Comercial">Comercial</option>
                                     <option class="form__option" value="Residencial">Residencial</option>
@@ -132,6 +140,7 @@
                             <div class="container__campo campo-50">
                                 <label for="produtointeresse" class="label">Produto de Interesse</label>
                                 <select name="produtointeresse" id="produtointeresse" required class="form__select">
+                                    <option value="" disabled selected class="form__option">Selecione uma opção</option>
                                     <option class="form__option" value="Porta de Enrolar">Porta de Enrolar</option>
                                     <option class="form__option" value="Porta Rápida">Porta Rápida</option>
                                     <option class="form__option" value="Niveladora de Docas">Niveladora de Docas</option>

@@ -69,6 +69,10 @@ body {
     margin: 0px 40px;
 }
 
+.container__hero-texto {
+    margin-top: 64px;
+}
+
 /* HERO TEXTO */
 
 .container__hero-texto {
@@ -192,7 +196,7 @@ body {
 
 
 /* NOTEBOOK */
-@media (max-width: 1220px) {
+@media (max-width: 1350px) {
     .headline {
         font-size: 40px;
     }
@@ -225,7 +229,7 @@ body {
 
 /* MOBILE */
 
-@media (max-width: 750px) {
+@media (max-width: 1190px) {
     .container__hero {
         flex-direction: column;
         flex-flow: column-reverse;
@@ -237,6 +241,6 @@ body {
     }
 
     .container__hero-img {
-        width: 75%;
+        width: 450px;
     }
 }
