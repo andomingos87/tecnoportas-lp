@@ -194,6 +194,11 @@ body {
     border: none;
 }
 
+.obrigatorio {
+    color: #d10413;
+    font-size: 14px;
+}
+
 
 /* NOTEBOOK */
 @media (max-width: 1350px) {

@@ -58,18 +58,18 @@
                 <form class="formulario" id="meuFormulario">
                     <div class="container__form">
                         <div class="container__campo">
-                            <label for="nomecompleto" class="label">Nome completo</label>
+                            <label for="nomecompleto" class="label">Nome completo <span class="obrigatorio">*</span></label>
                             <input class="form__input" type="text" id="nomecompleto" name="nomecompleto"
                                 placeholder="Digite o seu nome completo" required>
                         </div>
                         <div class="container__2colunas">
                             <div class="container__campo">
-                                <label for="email" class="label">E-mail</label>
+                                <label for="email" class="label">E-mail <span class="obrigatorio">*</span></label>
                                 <input class="form__input" type="text" id="email" name="email"
                                     placeholder="Digite o seu melhor e-mail" required>
                             </div>
                             <div class="container__campo">
-                                <label for="email" class="label">Whatsapp</label>
+                                <label for="email" class="label">Whatsapp <span class="obrigatorio">*</span></label>
                                 <input class="form__input" type="text" id="whatsapp" name="whatsapp"
                                     placeholder="Whatsapp com DDD" required>
                             </div>
@@ -77,7 +77,7 @@
                         <div class="container__2colunas">
                             <div class="container__2colunas">
                                 <div class="container__campo">
-                                    <label for="tipolead" class="label">Eu sou</label>
+                                    <label for="tipolead" class="label">Eu sou <span class="obrigatorio">*</span></label>
                                     <select name="tipolead" id="tipolead" required class="form__select">
                                         <option value="" disabled selected class="form__option">PF ou PJ?</option>
                                         <option class="form__option" value="PF">Pessoa Física</option>
@@ -85,7 +85,7 @@
                                     </select>
                                 </div>
                                 <div class="container__campo">
-                                    <label for="estado" class="label">Estado</label>
+                                    <label for="estado" class="label">Estado <span class="obrigatorio">*</span></label>
                                     <select name="estado" id="estado" class="form__select">
                                         <option value="" disabled selected class="form__option">Selecione</option>
                                         <option class="form__option" value="AL">AL</option>
@@ -119,7 +119,7 @@
                                 </div>
                             </div>
                             <div class="container__campo">
-                                <label for="cidade" class="label">Cidade</label>
+                                <label for="cidade" class="label">Cidade <span class="obrigatorio">*</span></label>
                                 <select name="cidade" id="cidade" class="form__select">
                                     <option value="" disabled selected class="form__select">Selecione uma cidade...
                                     </option>
@@ -129,7 +129,7 @@
                         </div>
                         <div class="container__2colunas">
                             <div class="container__campo">
-                                <label for="segmento" class="label">Segmento</label>
+                                <label for="segmento" class="label">Segmento <span class="obrigatorio">*</span></label>
                                 <select name="segmento" id="segmento" required class="form__select">
                                     <option value="" disabled selected class="form__option">Selecione uma opção</option>
                                     <option class="form__option" value="Industrial">Industrial</option>
@@ -138,7 +138,7 @@
                                 </select>
                             </div>
                             <div class="container__campo campo-50">
-                                <label for="produtointeresse" class="label">Produto de Interesse</label>
+                                <label for="produtointeresse" class="label">Produto de Interesse <span class="obrigatorio">*</span></label>
                                 <select name="produtointeresse" id="produtointeresse" required class="form__select">
                                     <option value="" disabled selected class="form__option">Selecione uma opção</option>
                                     <option class="form__option" value="Porta de Enrolar">Porta de Enrolar</option>
