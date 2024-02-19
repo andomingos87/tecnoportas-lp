@@ -38,4 +38,6 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
         });
 
         this.reset()
+
+        window.location.href = "obrigado.html"
 });
