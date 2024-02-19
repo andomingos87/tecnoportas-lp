@@ -1,0 +1,8 @@
+.headline__obrigado {
+    color: var(--vermelho);
+}
+
+.paragrafo__obrigado {
+    font-size: 24px;
+    font-weight: 600;
+}
