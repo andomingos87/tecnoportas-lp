@@ -13,7 +13,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
     };
 
     // Url da API em produção
-    fetch('https://tecnoportasleads.com.br/version-test/api/1.1/wf/novo-lead', {
+    fetch('https://tecnoportasleads.com.br/api/1.1/wf/novo-lead', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
