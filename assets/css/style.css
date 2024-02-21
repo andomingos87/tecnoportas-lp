@@ -22,9 +22,9 @@ body {
 /* HEADER */
 
 .header {
-    width: 100%;
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 16px 0px;
 }
 
@@ -33,7 +33,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 40px;
+    margin: 0 16px;
 }
 
 .header__logo-img {
@@ -44,6 +44,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: var(--azul);
+    text-align: end;
 }
 
 .header__contato-texto a {
@@ -55,9 +56,9 @@ body {
 /* HERO */
 
 .hero {
-    width: 100%;
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 16px 0px;
 }
 
@@ -66,7 +67,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 40px;
+    margin: 0px 16px;
 }
 
 .container__hero-texto {
@@ -76,7 +77,6 @@ body {
 /* HERO TEXTO */
 
 .container__hero-texto {
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,10 +85,6 @@ body {
 }
 
 /* HERO IMG */
-
-.container__hero-img {
-    width: 50%;
-}
 
 .container__hero-img img {
     width: 100%;
@@ -242,10 +238,11 @@ body {
     }
 
     .container__hero-texto {
-        width: 100%;
+        
     }
 
     .container__hero-img {
-        width: 450px;
+        max-width: 450px;
     }
+
 }
