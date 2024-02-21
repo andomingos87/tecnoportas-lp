@@ -242,7 +242,7 @@ body {
     }
 
     .container__hero-img {
-        max-width: 450px;
+        display: none;
     }
 
 }
