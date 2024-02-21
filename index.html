@@ -44,6 +44,23 @@
     </script>
     <!-- End Google tag (gtag.js) -->
 
+    <!-- Event snippet for Lead Franquia conversion page -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-1058699934/K2xyCKfW0ZQZEJ716fgD',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+    <!-- End of Event snippet for Lead Franquia conversion page -->
+
 </head>
 
 <body>
