@@ -33,6 +33,17 @@
             src="https://www.facebook.com/tr?id=359643196916847&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGQYXFNDXJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HGQYXFNDXJ');
+    </script>
+    <!-- End Google tag (gtag.js) -->
+
 </head>
 
 <body>
@@ -56,7 +67,8 @@
                 <form class="formulario" id="meuFormulario">
                     <div class="container__form">
                         <div class="container__campo">
-                            <label for="nomecompleto" class="label">Nome completo <span class="obrigatorio">*</span></label>
+                            <label for="nomecompleto" class="label">Nome completo <span
+                                    class="obrigatorio">*</span></label>
                             <input class="form__input" type="text" id="nomecompleto" name="nomecompleto"
                                 placeholder="Digite o seu nome completo" required>
                         </div>
@@ -75,7 +87,8 @@
                         <div class="container__2colunas">
                             <div class="container__2colunas">
                                 <div class="container__campo">
-                                    <label for="tipolead" class="label">Eu sou <span class="obrigatorio">*</span></label>
+                                    <label for="tipolead" class="label">Eu sou <span
+                                            class="obrigatorio">*</span></label>
                                     <select name="tipolead" id="tipolead" required class="form__select">
                                         <option value="" disabled selected class="form__option">PF ou PJ?</option>
                                         <option class="form__option" value="PF">Pessoa Física</option>
@@ -136,12 +149,14 @@
                                 </select>
                             </div>
                             <div class="container__campo campo-50">
-                                <label for="produtointeresse" class="label">Produto de Interesse <span class="obrigatorio">*</span></label>
+                                <label for="produtointeresse" class="label">Produto de Interesse <span
+                                        class="obrigatorio">*</span></label>
                                 <select name="produtointeresse" id="produtointeresse" required class="form__select">
                                     <option value="" disabled selected class="form__option">Selecione uma opção</option>
                                     <option class="form__option" value="Porta de Enrolar">Porta de Enrolar</option>
                                     <option class="form__option" value="Porta Rápida">Porta Rápida</option>
-                                    <option class="form__option" value="Niveladora de Docas">Niveladora de Docas</option>
+                                    <option class="form__option" value="Niveladora de Docas">Niveladora de Docas
+                                    </option>
                                     <option class="form__option" value="Porta Corta Fogo">Porta Corta Fogo</option>
                                     <option class="form__option" value="Porta Blindada">Porta Blindada</option>
                                 </select>
