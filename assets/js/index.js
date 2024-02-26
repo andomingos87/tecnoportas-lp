@@ -31,13 +31,12 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
         .then(data => {
             console.log('Success:', data);
             // Tratar a resposta de sucesso aqui
+            this.reset()
+            window.location.href = "obrigado.html"
         })
         .catch((error) => {
             console.error('Error:', error);
             // Tratar o erro aqui
         });
 
-        this.reset()
-
-        window.location.href = "obrigado.html"
 });
