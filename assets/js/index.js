@@ -10,7 +10,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
         estado: document.getElementById('estado').value,
         segmento: document.getElementById('segmento').value,
         produtointeresse: document.getElementById('produtointeresse').value,
-        origem: "Facebook"
+        origem: 'Facebook'
     };
 
     var xhr = new XMLHttpRequest();
