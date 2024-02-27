@@ -9,7 +9,8 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
         tipolead: document.getElementById('tipolead').value,
         estado: document.getElementById('estado').value,
         segmento: document.getElementById('segmento').value,
-        produtointeresse: document.getElementById('produtointeresse').value
+        produtointeresse: document.getElementById('produtointeresse').value,
+        origem: "Facebook"
     };
 
     var xhr = new XMLHttpRequest();
