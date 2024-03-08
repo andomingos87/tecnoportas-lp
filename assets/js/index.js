@@ -21,7 +21,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 console.log('Success:', xhr.responseText);
-                // window.location.href = "sucesso-campanha-code.html";
+                window.location.href = "sucesso-campanha-code.html";
             } else {
                 console.error('Error:', xhr.statusText);
             }
