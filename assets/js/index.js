@@ -13,6 +13,8 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
         origem: 'LP Campanha Código'
     };
 
+    var botao = document.getElementById('botao')
+
     var xhr = new XMLHttpRequest();
     xhr.open("POST", 'https://tecnoportasleads.com.br/api/1.1/wf/novo-lead', true);
     xhr.setRequestHeader("Content-Type", "application/json");
@@ -21,7 +23,10 @@ document.getElementById('meuFormulario').addEventListener('submit', function (e)
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 console.log('Success:', xhr.responseText);
-                window.location.href = "sucesso-campanha-code.html";
+                botao.disabled = true
+                setTimeout(function () {
+                    window.location.href = "sucesso-campanha-code.html";
+                }, 5000);
             } else {
                 console.error('Error:', xhr.statusText);
             }

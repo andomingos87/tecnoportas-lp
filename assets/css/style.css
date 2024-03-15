@@ -177,7 +177,7 @@ body {
     font-size: 16px;
 }
 
-.botao__enviar {
+#botao {
     background-color: var(--vermelho);
     padding: 16px 32px;
     width: 250px;
@@ -189,6 +189,11 @@ body {
     cursor: pointer;
     outline: none;
     border: none;
+}
+
+#botao:disabled {
+    cursor: not-allowed;
+    background-color: #c0c0c0;
 }
 
 .obrigatorio {
